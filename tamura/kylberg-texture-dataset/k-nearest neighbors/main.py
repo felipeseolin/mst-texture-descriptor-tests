@@ -1,6 +1,6 @@
 from util.suit_arff_data import get_data
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay, classification_report
 import matplotlib.pyplot as plt
 import numpy as np
@@ -9,17 +9,17 @@ SEED = 5
 
 
 def main():
-    arff_file = '../../../datasets/kylberg-texture-dataset/data/Gabor.arff'
+    arff_file = '../../../datasets/kylberg-texture-dataset/data/Tamura.arff'
     data = get_data(arff_file)
     np.random.seed(SEED)
     # Set x and y
     x = data.loc[:, data.columns != 'classes']
-    y = data[['classes']]
+    y = data['classes']
     train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.20, stratify=y)
     print(f"Train - {len(train_x)}")
     print(f"Test - {len(test_x)}")
 
-    model = DecisionTreeClassifier()
+    model = KNeighborsClassifier()
     model.fit(train_x, train_y)
     predict = model.predict(test_x)
 

@@ -14,7 +14,7 @@ def main():
     np.random.seed(SEED)
     # Set x and y
     x = data.loc[:, data.columns != 'classes']
-    y = data[['classes']]
+    y = data['classes']
     train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.20, stratify=y)
     print(f"Train - {len(train_x)}")
     print(f"Test - {len(test_x)}")
