@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pandas = "*"
+numpy = "*"
+scipy = "*"
+matplotlib = "*"
+ipython = "*"
+jupyter = "*"
+sympy = "*"
+nose = "*"
+scikit-learn = "*"
+
+[requires]
+python_version = "3.8"
