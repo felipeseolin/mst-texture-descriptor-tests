@@ -1,17 +1,27 @@
+from pandas import read_csv
 from util.open_arff import open_arff
 
 
-def get_data(arff_file_path):
-    data = open_arff(arff_file_path)
-    data = rename(data)
+def get_data(file_path, is_arff=True):
+    if is_arff:
+        data = open_arff(file_path)
+        data = rename(data)
+    else:
+        data = read_csv(file_path)
+        data = rename_col_name(data)
     return data
 
 
-def rename(data):
+def rename_col_name(data):
     cols_rename = {
         'class': 'classes'
     }
     data = data.rename(columns=cols_rename)
+    return data
+
+
+def rename(data):
+    data = rename_col_name(data)
     data_rename = {
         b'BL1': 'BL1',
         b'BL2': 'BL2',
