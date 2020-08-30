@@ -1,8 +1,8 @@
 from util.suit_arff_data import get_data
+from util.save_results import save_results, save_plot
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay, classification_report
-import matplotlib.pyplot as plt
 import numpy as np
 
 SEED = 5
@@ -16,23 +16,32 @@ def main():
     x = data.loc[:, data.columns != 'classes']
     y = data['classes']
     train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.20, stratify=y)
-    print(f"Train - {len(train_x)}")
-    print(f"Test - {len(test_x)}")
 
     model = SVC()
     model.fit(train_x, train_y)
     predict = model.predict(test_x)
 
     accuracy = accuracy_score(test_y, predict)
-    print(f"Accuracy = {accuracy:.2%}")
 
     report = classification_report(test_y, predict)
-    print(f"\n\nReport \n\n {report}")
 
     cmatrix = confusion_matrix(test_y, predict)
     confusion_matrix_display = ConfusionMatrixDisplay(cmatrix)
-    confusion_matrix_display.plot()
-    plt.show()
+
+    base_path_results = '/mnt/5022A63622A620C8/TCC/tests/results/'
+    path_results = base_path_results + 'gabor/kylberg_texture_dataset/SVC'
+
+    content = f"====== GABOR - SVC - KYLBERG TEXTURE DATASET====== \n\n" \
+              f"{len(x)} images\n\n" \
+              f"Train size: {len(train_x)}\n" \
+              f"Test size: {len(test_x)}\n\n" \
+              f"Accuracy: {accuracy:.2%}\n\n" \
+              f"Report: \n\n {report}"
+
+    save_results(content, path_results)
+    save_plot(confusion_matrix_display, path_results)
+
+    print('OPEN FILES RESULTS IN: ' + path_results)
 
 
 if __name__:
