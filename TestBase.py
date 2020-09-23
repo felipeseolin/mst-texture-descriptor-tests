@@ -115,7 +115,7 @@ class TestBase:
                 path = path + 'mst/'
             # Dataset
             if self.dataset == dataset_constants.KYLBERG:
-                path = path + 'kylberg-texture-dataset/'
+                path = path + 'kylberg_texture_dataset/'
             # Classifier
             if self.classifier == classifier_constants.DECISION_TREE:
                 path = path + 'decision_tree'
@@ -168,7 +168,7 @@ class TestBase:
     def set_file(self, value):
         self.file = value
 
-    def is_arf(self, value=True):
+    def set_is_arff(self, value):
         self.is_arff = value
 
     def set_decision_tree_classifier(self):
