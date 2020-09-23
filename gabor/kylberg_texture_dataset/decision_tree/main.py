@@ -1,9 +1,5 @@
-import sys
-sys.path.append('/mnt/5022A63622A620C8/TCC/tests')
-sys.path.append('/mnt/5022A63622A620C8/TCC/tests/util')
-sys.path.append('/mnt/5022A63622A620C8/TCC/tests/**')
+from TestBase import TestBase
 
-from testBase import TestBase
 
 def main():
     test_base = TestBase()
