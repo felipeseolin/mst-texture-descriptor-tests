@@ -147,6 +147,12 @@ class TestBase:
             # Classifier
             if self.classifier == classifier_constants.DECISION_TREE:
                 header = header + 'DECISION TREE - '
+            elif self.classifier == classifier_constants.SVC:
+                header = header + 'SVC - '
+            elif self.classifier == classifier_constants.KNN:
+                header = header + 'K_NEAREST_NEIGHBORS - '
+            elif self.classifier == classifier_constants.LINEAR_SVC:
+                header = header + 'LINEAR_SVC - '
             # Dataset
             if self.dataset == dataset_constants.KYLBERG:
                 header = header + 'KYLBERG TEXTURE DATASET'
