@@ -1,7 +1,8 @@
-====== GABOR - DECISION TREE- KYLBERG TEXTURE DATASET====== 
+====== GABOR - DECISION TREE- KYLBERG TEXTURE DATASET======
 
 4480 images
 
+SEED: 5
 Train size: 3584
 Test size: 896
 
