@@ -1,7 +1,8 @@
-====== LBP - DECISION TREE- KYLBERG TEXTURE DATASET====== 
+====== LBP - DECISION TREE - KYLBERG TEXTURE DATASET ======
 
 4480 images
 
+SEED: 5
 Train size: 3584
 Test size: 896
 

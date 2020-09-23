@@ -1,7 +1,8 @@
-====== LBP - K_NEAREST_NEIGHBORS - KYLBERG TEXTURE DATASET====== 
+====== LBP - K_NEAREST_NEIGHBORS - KYLBERG TEXTURE DATASET ======
 
 4480 images
 
+SEED: 5
 Train size: 3584
 Test size: 896
 
