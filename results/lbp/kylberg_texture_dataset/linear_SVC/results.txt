@@ -8,6 +8,15 @@ Test size: 896
 
 Accuracy: 99.33%
 
+Precision Micro: 99.33%
+Precision Macro: 99.41%
+
+Recall Micro: 99.33%
+Recall Macro: 99.33%
+
+F1-Score Micro: 99.33%
+F1-Score Macro: 99.33%
+
 Report: 
 
                precision    recall  f1-score   support
