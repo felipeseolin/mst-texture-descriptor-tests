@@ -1,10 +1,11 @@
 from util.suit_arff_data import get_data
-from util.save_results import save_results, save_plot
+from util.save_results import save_results, save_plot, save_csv
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import LinearSVC, SVC
-from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay, classification_report
+from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay, classification_report, \
+    precision_recall_fscore_support
 
 import sys
 import numpy as np
@@ -41,7 +42,10 @@ class TestBase:
         predicted = model.predict(test_x)
         # Get accuracy and report
         accuracy = accuracy_score(test_y, predicted)
+        prfs_micro = precision_recall_fscore_support(test_y, predicted, average='micro')
+        prfs_macro = precision_recall_fscore_support(test_y, predicted, average='macro')
         report = classification_report(test_y, predicted)
+        report_csv = classification_report(test_y, predicted, output_dict=True)
         # Get confusion_matrix
         cmatrix = confusion_matrix(test_y, predicted)
         confusion_matrix_display = ConfusionMatrixDisplay(cmatrix)
@@ -52,10 +56,17 @@ class TestBase:
                                              f"Train size: {len(train_x)}\n" \
                                              f"Test size: {len(test_x)}\n\n" \
                                              f"Accuracy: {accuracy:.2%}\n\n" \
+                                             f"Precision Micro: {prfs_micro[0]:.2%}\n" \
+                                             f"Precision Macro: {prfs_macro[0]:.2%}\n\n" \
+                                             f"Recall Micro: {prfs_micro[1]:.2%}\n" \
+                                             f"Recall Macro: {prfs_macro[1]:.2%}\n\n" \
+                                             f"F1-Score Micro: {prfs_micro[2]:.2%}\n" \
+                                             f"F1-Score Macro: {prfs_macro[2]:.2%}\n\n" \
                                              f"Report: \n\n {report}"
         complete_path = self.get_result_path()
         save_results(content, complete_path)
         save_plot(confusion_matrix_display, complete_path)
+        save_csv(report_csv, complete_path)
 
         print('OPEN FILES RESULTS IN: ' + complete_path)
         print('\n\n=================== END ===================')
@@ -158,6 +169,41 @@ class TestBase:
                 header = header + 'KYLBERG TEXTURE DATASET'
 
             return header + " ======"
+
+    def get_classes_y(self):
+        if self.dataset == dataset_constants.KYLBERG:
+            return [
+                'BL1',
+                'BL2',
+                'CAN',
+                'CE1',
+                'CE2',
+                'CUS',
+                'FL1',
+                'FL2',
+                'GRA',
+                'LEN',
+                'LIN',
+                'OAT',
+                'PEA',
+                'RI1',
+                'RI2',
+                'RUG',
+                'SAN',
+                'SC1',
+                'SC2',
+                'SCR',
+                'SE1',
+                'SE2',
+                'SES',
+                'ST1',
+                'ST2',
+                'ST3',
+                'STL',
+                'WAL',
+            ]
+
+        return []
 
     def set_result_header(self, value):
         self.result_header = value
