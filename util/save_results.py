@@ -1,5 +1,7 @@
-import matplotlib.pyplot as plt
 from pathlib import Path
+
+import matplotlib.pyplot as plt
+import pandas as pd
 
 
 def save_results(content, diretory_path):
@@ -13,3 +15,8 @@ def save_results(content, diretory_path):
 def save_plot(confusion_matrix_display, path_results):
     confusion_matrix_display.plot()
     plt.savefig(path_results + '/results.png')
+
+
+def save_csv(report, path_results):
+    df = pd.DataFrame.from_dict(report)
+    df.to_csv(path_results + '/report.csv', index=False, header=True, encoding='utf-8')
