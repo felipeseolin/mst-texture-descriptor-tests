@@ -1,11 +1,15 @@
+import os
+import dataset_constants
+
 from pandas import read_csv
 from util.open_arff import open_arff
 
 
-def get_data(file_path, is_arff=True):
+def get_data(file_path, dataset, is_arff=True):
+    file_path = os.path.realpath(file_path)
     if is_arff:
         data = open_arff(file_path)
-        data = rename(data)
+        data = rename(data, dataset)
     else:
         data = read_csv(file_path)
         data = rename_col_name(data)
@@ -20,9 +24,21 @@ def rename_col_name(data):
     return data
 
 
-def rename(data):
+def rename(data, dataset):
     data = rename_col_name(data)
-    data_rename = {
+    data_rename = {}
+
+    if dataset == dataset_constants.BRODATZ:
+        data_rename = rename_brodatz_dataset()
+    if dataset == dataset_constants.KYLBERG:
+        data_rename= rename_kylberg_dataset()
+
+    data.classes = data.classes.map(data_rename)
+    return data
+
+
+def rename_kylberg_dataset():
+    return {
         b'BL1': 'BL1',
         b'BL2': 'BL2',
         b'CAN': 'CAN',
@@ -52,5 +68,21 @@ def rename(data):
         b'STL': 'STL',
         b'WAL': 'WAL',
     }
-    data.classes = data.classes.map(data_rename)
-    return data
+
+
+def rename_brodatz_dataset():
+    return {
+       b'BAR': 'BAR',
+       b'BRI': 'BRI',
+       b'BUB': 'BUB',
+       b'GRA': 'GRA',
+       b'LEA': 'LEA',
+       b'PIG': 'PIG',
+       b'RAF': 'RAF',
+       b'SAN': 'SAN',
+       b'STR': 'STR',
+       b'WAT': 'WAT',
+       b'WEA': 'WEA',
+       b'WOL': 'WOL',
+       b'WOO': 'WOO'
+    }

@@ -1,0 +1,40 @@
+====== GABOR - SVC - BRODATZ TEXTURE DATASET ======
+
+91 images
+
+SEED: 5
+Train size: 72
+Test size: 19
+
+Accuracy: 21.05%
+
+Precision Micro: 21.05%
+Precision Macro: 14.62%
+
+Recall Micro: 21.05%
+Recall Macro: 30.77%
+
+F1-Score Micro: 21.05%
+F1-Score Macro: 17.95%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         2
+         BRI       0.00      0.00      0.00         1
+         BUB       0.20      1.00      0.33         1
+         GRA       0.00      0.00      0.00         2
+         LEA       0.00      0.00      0.00         2
+         PIG       0.00      0.00      0.00         1
+         RAF       0.00      0.00      0.00         2
+         SAN       0.00      0.00      0.00         1
+         STR       0.00      0.00      0.00         2
+         WAT       0.20      1.00      0.33         1
+         WEA       0.50      1.00      0.67         1
+         WOL       0.00      0.00      0.00         2
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.21        19
+   macro avg       0.15      0.31      0.18        19
+weighted avg       0.10      0.21      0.12        19

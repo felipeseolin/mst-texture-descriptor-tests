@@ -1,0 +1,40 @@
+====== TAMURA - SVC - BRODATZ TEXTURE DATASET ======
+
+91 images
+
+SEED: 5
+Train size: 72
+Test size: 19
+
+Accuracy: 0.00%
+
+Precision Micro: 0.00%
+Precision Macro: 0.00%
+
+Recall Micro: 0.00%
+Recall Macro: 0.00%
+
+F1-Score Micro: 0.00%
+F1-Score Macro: 0.00%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00       2.0
+         BRI       0.00      0.00      0.00       1.0
+         BUB       0.00      0.00      0.00       1.0
+         GRA       0.00      0.00      0.00       2.0
+         LEA       0.00      0.00      0.00       2.0
+         PIG       0.00      0.00      0.00       1.0
+         RAF       0.00      0.00      0.00       2.0
+         SAN       0.00      0.00      0.00       1.0
+         STR       0.00      0.00      0.00       2.0
+         WAT       0.00      0.00      0.00       1.0
+         WEA       0.00      0.00      0.00       1.0
+         WOL       0.00      0.00      0.00       2.0
+         WOO       0.00      0.00      0.00       1.0
+
+    accuracy                           0.00      19.0
+   macro avg       0.00      0.00      0.00      19.0
+weighted avg       0.00      0.00      0.00      19.0
