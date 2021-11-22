@@ -34,6 +34,8 @@ def rename(data, dataset):
         data_rename = rename_kylberg_dataset()
     elif dataset == dataset_constants.USPTEX:
         data_rename = rename_usptex_dataset()
+    elif dataset == dataset_constants.VISTEX:
+        data_rename = rename_vistex_dataset()
 
     data.classes = data.classes.map(data_rename)
     return data
@@ -87,6 +89,30 @@ def rename_brodatz_dataset():
        b'WEA': 'WEA',
        b'WOL': 'WOL',
        b'WOO': 'WOO'
+    }
+
+
+def rename_vistex_dataset():
+    return {
+        b'BAR': 'BAR',
+        b'BRI': 'BRI',
+        b'BUI': 'BUI',
+        b'CLO': 'CLO',
+        b'FAB': 'FAB',
+        b'FLO': 'FLO',
+        b'FOO': 'FOO',
+        b'GRA': 'GRA',
+        b'LEA': 'LEA',
+        b'MET': 'MET',
+        b'MIS': 'MIS',
+        b'PAI': 'PAI',
+        b'SAN': 'SAN',
+        b'STO': 'STO',
+        b'TER': 'TER',
+        b'TIL': 'TIL',
+        b'WAT': 'WAT',
+        b'WHE': 'WHE',
+        b'WOO': 'WOO'
     }
 
 

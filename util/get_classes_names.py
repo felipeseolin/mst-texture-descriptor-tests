@@ -1,6 +1,6 @@
 import os
 
-location = '/Users/seolin/Documents/TCC/image-texture-classification-tests/datasets/brodatz/images'
+location = '/Users/seolin/Documents/TCC/image-texture-classification-tests/datasets/vistex-texture-dataset/images'
 images = sorted(os.listdir(location))
 classes = []
 

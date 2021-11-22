@@ -96,6 +96,8 @@ class TestBase:
                 file_path = file_path + 'brodatz-texture-dataset/'
             if self.dataset == dataset_constants.USPTEX:
                 file_path = file_path + 'usptex-texture-dataset/'
+            if self.dataset == dataset_constants.VISTEX:
+                file_path = file_path + 'vistex-texture-dataset/'
 
             file_path = file_path + 'data/'
             # Descriptor
@@ -135,6 +137,8 @@ class TestBase:
                 path = path + 'brodatz_texture_dataset/'
             if self.dataset == dataset_constants.USPTEX:
                 path = path + 'usptex_texture_dataset/'
+            if self.dataset == dataset_constants.VISTEX:
+                path = path + 'vistex_texture_dataset/'
             # Classifier
             if self.classifier == classifier_constants.DECISION_TREE:
                 path = path + 'decision_tree'
@@ -177,8 +181,10 @@ class TestBase:
                 header = header + 'KYLBERG TEXTURE DATASET'
             if self.dataset == dataset_constants.BRODATZ:
                 header = header + 'BRODATZ TEXTURE DATASET'
-            if self.dataset == dataset_constants.BRODATZ:
+            if self.dataset == dataset_constants.USPTEX:
                 header = header + 'USPTEX TEXTURE DATASET'
+            if self.dataset == dataset_constants.VISTEX:
+                header = header + 'VISTEX TEXTURE DATASET'
 
             return header + " ======"
 
@@ -186,6 +192,11 @@ class TestBase:
         if self.dataset == dataset_constants.BRODATZ:
             return [
                 'BAR', 'BRI', 'BUB', 'GRA', 'LEA', 'PIG', 'RAF', 'SAN', 'STR', 'WAT', 'WEA', 'WOL', 'WOO'
+            ]
+        if self.dataset == dataset_constants.VISTEX:
+            return [
+                'BAR', 'BRI', 'BUI', 'CLO', 'FAB', 'FLO', 'FOO', 'GRA', 'LEA', 'MET', 'MIS', 'PAI', 'SAN', 'STO', 'TER',
+                'TIL', 'WAT', 'WHE', 'WOO'
             ]
         if self.dataset == dataset_constants.USPTEX:
             return [
@@ -272,6 +283,9 @@ class TestBase:
 
     def set_usptex_dataset(self):
         self.dataset = dataset_constants.USPTEX
+
+    def set_vistex_dataset(self):
+        self.dataset = dataset_constants.VISTEX
 
     def set_brodatz_dataset(self):
         self.dataset = dataset_constants.BRODATZ
