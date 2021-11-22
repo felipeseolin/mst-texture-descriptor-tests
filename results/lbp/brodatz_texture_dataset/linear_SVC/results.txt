@@ -1,0 +1,40 @@
+====== LBP - LINEAR_SVC - BRODATZ TEXTURE DATASET ======
+
+91 images
+
+SEED: 5
+Train size: 72
+Test size: 19
+
+Accuracy: 68.42%
+
+Precision Micro: 68.42%
+Precision Macro: 57.69%
+
+Recall Micro: 68.42%
+Recall Macro: 69.23%
+
+F1-Score Micro: 68.42%
+F1-Score Macro: 61.28%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.50      0.50      0.50         2
+         BRI       0.00      0.00      0.00         1
+         BUB       0.50      1.00      0.67         1
+         GRA       1.00      1.00      1.00         2
+         LEA       0.50      0.50      0.50         2
+         PIG       1.00      1.00      1.00         1
+         RAF       0.00      0.00      0.00         2
+         SAN       1.00      1.00      1.00         1
+         STR       1.00      1.00      1.00         2
+         WAT       0.00      0.00      0.00         1
+         WEA       0.33      1.00      0.50         1
+         WOL       0.67      1.00      0.80         2
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.68        19
+   macro avg       0.58      0.69      0.61        19
+weighted avg       0.59      0.68      0.62        19

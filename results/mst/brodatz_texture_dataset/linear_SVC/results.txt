@@ -1,0 +1,40 @@
+====== MST - LINEAR_SVC - BRODATZ TEXTURE DATASET ======
+
+91 images
+
+SEED: 5
+Train size: 72
+Test size: 19
+
+Accuracy: 63.16%
+
+Precision Micro: 63.16%
+Precision Macro: 57.69%
+
+Recall Micro: 63.16%
+Recall Macro: 65.38%
+
+F1-Score Micro: 63.16%
+F1-Score Macro: 60.51%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         2
+         BRI       1.00      1.00      1.00         1
+         BUB       1.00      1.00      1.00         1
+         GRA       0.67      1.00      0.80         2
+         LEA       1.00      1.00      1.00         2
+         PIG       0.00      0.00      0.00         1
+         RAF       1.00      1.00      1.00         2
+         SAN       1.00      1.00      1.00         1
+         STR       0.00      0.00      0.00         2
+         WAT       0.00      0.00      0.00         1
+         WEA       0.50      1.00      0.67         1
+         WOL       0.33      0.50      0.40         2
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.63        19
+   macro avg       0.58      0.65      0.61        19
+weighted avg       0.55      0.63      0.58        19

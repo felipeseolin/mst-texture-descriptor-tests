@@ -1,0 +1,40 @@
+====== HARALICK - DECISION TREE - BRODATZ TEXTURE DATASET ======
+
+91 images
+
+SEED: 5
+Train size: 72
+Test size: 19
+
+Accuracy: 89.47%
+
+Precision Micro: 89.47%
+Precision Macro: 92.31%
+
+Recall Micro: 89.47%
+Recall Macro: 92.31%
+
+F1-Score Micro: 89.47%
+F1-Score Macro: 89.74%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       1.00      1.00      1.00         2
+         BRI       0.50      1.00      0.67         1
+         BUB       1.00      1.00      1.00         1
+         GRA       1.00      1.00      1.00         2
+         LEA       1.00      1.00      1.00         2
+         PIG       0.50      1.00      0.67         1
+         RAF       1.00      1.00      1.00         2
+         SAN       1.00      1.00      1.00         1
+         STR       1.00      0.50      0.67         2
+         WAT       1.00      1.00      1.00         1
+         WEA       1.00      1.00      1.00         1
+         WOL       1.00      0.50      0.67         2
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.89        19
+   macro avg       0.92      0.92      0.90        19
+weighted avg       0.95      0.89      0.89        19

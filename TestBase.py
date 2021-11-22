@@ -22,7 +22,7 @@ class TestBase:
     dataset = None
     descriptor = None
 
-    base_path_results = '/mnt/5022A63622A620C8/TCC/tests/results/'
+    base_path_results = '/Users/seolin/Documents/TCC/image-texture-classification-tests/results/'
     path_results = None
     result_header = None
 
@@ -31,7 +31,7 @@ class TestBase:
         # Set the SEED for the entire model
         np.random.seed(self.SEED)
         # Get data and format
-        data = get_data(self.get_data_file_path(), is_arff=self.is_arff)
+        data = get_data(self.get_data_file_path(), dataset=self.dataset, is_arff=self.is_arff)
         x = data.loc[:, data.columns != 'classes']
         y = data['classes']
         # Set train and test
@@ -92,6 +92,8 @@ class TestBase:
             # Dataset
             if self.dataset == dataset_constants.KYLBERG:
                 file_path = file_path + 'kylberg-texture-dataset/'
+            if self.dataset == dataset_constants.BRODATZ:
+                file_path = file_path + 'brodatz-texture-dataset/'
 
             file_path = file_path + 'data/'
             # Descriptor
@@ -127,6 +129,8 @@ class TestBase:
             # Dataset
             if self.dataset == dataset_constants.KYLBERG:
                 path = path + 'kylberg_texture_dataset/'
+            if self.dataset == dataset_constants.BRODATZ:
+                path = path + 'brodatz_texture_dataset/'
             # Classifier
             if self.classifier == classifier_constants.DECISION_TREE:
                 path = path + 'decision_tree'
@@ -167,10 +171,16 @@ class TestBase:
             # Dataset
             if self.dataset == dataset_constants.KYLBERG:
                 header = header + 'KYLBERG TEXTURE DATASET'
+            if self.dataset == dataset_constants.BRODATZ:
+                header = header + 'BRODATZ TEXTURE DATASET'
 
             return header + " ======"
 
     def get_classes_y(self):
+        if self.dataset == dataset_constants.BRODATZ:
+            return [
+                'BAR', 'BRI', 'BUB', 'GRA', 'LEA', 'PIG', 'RAF', 'SAN', 'STR', 'WAT', 'WEA', 'WOL', 'WOO'
+            ]
         if self.dataset == dataset_constants.KYLBERG:
             return [
                 'BL1',
@@ -237,6 +247,9 @@ class TestBase:
 
     def set_kylberg_dataset(self):
         self.dataset = dataset_constants.KYLBERG
+
+    def set_brodatz_dataset(self):
+        self.dataset = dataset_constants.BRODATZ
 
     def set_haralick_descriptor(self):
         self.descriptor = descriptor_constants.HARALICK

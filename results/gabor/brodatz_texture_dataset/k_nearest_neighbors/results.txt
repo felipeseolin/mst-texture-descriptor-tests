@@ -1,0 +1,40 @@
+====== GABOR - K_NEAREST_NEIGHBORS - BRODATZ TEXTURE DATASET ======
+
+91 images
+
+SEED: 5
+Train size: 72
+Test size: 19
+
+Accuracy: 78.95%
+
+Precision Micro: 78.95%
+Precision Macro: 70.51%
+
+Recall Micro: 78.95%
+Recall Macro: 80.77%
+
+F1-Score Micro: 78.95%
+F1-Score Macro: 72.82%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       1.00      1.00      1.00         2
+         BRI       0.50      1.00      0.67         1
+         BUB       0.50      1.00      0.67         1
+         GRA       1.00      0.50      0.67         2
+         LEA       1.00      1.00      1.00         2
+         PIG       0.50      1.00      0.67         1
+         RAF       0.67      1.00      0.80         2
+         SAN       0.00      0.00      0.00         1
+         STR       1.00      1.00      1.00         2
+         WAT       1.00      1.00      1.00         1
+         WEA       1.00      1.00      1.00         1
+         WOL       0.00      0.00      0.00         2
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.79        19
+   macro avg       0.71      0.81      0.73        19
+weighted avg       0.73      0.79      0.73        19
