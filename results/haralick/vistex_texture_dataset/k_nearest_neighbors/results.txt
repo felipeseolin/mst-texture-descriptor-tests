@@ -1,0 +1,45 @@
+====== HARALICK - K_NEAREST_NEIGHBORS - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 23.53%
+
+Precision Micro: 23.53%
+Precision Macro: 11.06%
+
+Recall Micro: 23.53%
+Recall Macro: 18.06%
+
+F1-Score Micro: 23.53%
+F1-Score Macro: 13.59%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.17      0.33      0.22         3
+         BRI       0.00      0.00      0.00         2
+         BUI       0.20      0.50      0.29         2
+         FAB       0.12      0.25      0.17         4
+         FLO       0.00      0.00      0.00         2
+         FOO       0.33      0.50      0.40         2
+         GRA       0.00      0.00      0.00         1
+         LEA       0.50      0.67      0.57         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.00      0.00      0.00         1
+         STO       0.00      0.00      0.00         1
+         TER       0.67      1.00      0.80         2
+         TIL       0.00      0.00      0.00         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       0.00      0.00      0.00         1
+
+    accuracy                           0.24        34
+   macro avg       0.11      0.18      0.14        34
+weighted avg       0.14      0.24      0.18        34

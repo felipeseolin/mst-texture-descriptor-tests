@@ -1,0 +1,45 @@
+====== GABOR - DECISION TREE - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 29.41%
+
+Precision Micro: 29.41%
+Precision Macro: 29.26%
+
+Recall Micro: 29.41%
+Recall Macro: 31.02%
+
+F1-Score Micro: 29.41%
+F1-Score Macro: 28.82%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       0.00      0.00      0.00         2
+         BUI       0.00      0.00      0.00         2
+         FAB       0.17      0.25      0.20         4
+         FLO       0.50      0.50      0.50         2
+         FOO       0.00      0.00      0.00         2
+         GRA       0.00      0.00      0.00         1
+         LEA       0.20      0.33      0.25         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       1.00      1.00      1.00         1
+         STO       0.00      0.00      0.00         1
+         TER       1.00      1.00      1.00         2
+         TIL       0.40      1.00      0.57         2
+         WAT       1.00      0.50      0.67         2
+         WHE       0.00      0.00      0.00         1
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.29        34
+   macro avg       0.29      0.31      0.29        34
+weighted avg       0.27      0.29      0.27        34

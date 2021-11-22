@@ -1,0 +1,46 @@
+====== LBP - DECISION TREE - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 14.71%
+
+Precision Micro: 14.71%
+Precision Macro: 12.28%
+
+Recall Micro: 14.71%
+Recall Macro: 13.60%
+
+F1-Score Micro: 14.71%
+F1-Score Macro: 10.63%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       0.00      0.00      0.00         2
+         BUI       0.00      0.00      0.00         2
+         CLO       0.00      0.00      0.00         0
+         FAB       1.00      0.25      0.40         4
+         FLO       0.00      0.00      0.00         2
+         FOO       0.00      0.00      0.00         2
+         GRA       0.00      0.00      0.00         1
+         LEA       0.25      0.33      0.29         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.00      0.00      0.00         1
+         STO       0.00      0.00      0.00         1
+         TER       0.25      0.50      0.33         2
+         TIL       0.50      0.50      0.50         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       0.33      1.00      0.50         1
+
+    accuracy                           0.15        34
+   macro avg       0.12      0.14      0.11        34
+weighted avg       0.19      0.15      0.14        34

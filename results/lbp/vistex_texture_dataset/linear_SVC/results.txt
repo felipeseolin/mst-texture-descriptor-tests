@@ -1,0 +1,45 @@
+====== LBP - LINEAR_SVC - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 52.94%
+
+Precision Micro: 52.94%
+Precision Macro: 50.00%
+
+Recall Micro: 52.94%
+Recall Macro: 60.19%
+
+F1-Score Micro: 52.94%
+F1-Score Macro: 51.11%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.50      0.33      0.40         3
+         BRI       0.50      0.50      0.50         2
+         BUI       1.00      0.50      0.67         2
+         FAB       0.00      0.00      0.00         4
+         FLO       0.00      0.00      0.00         2
+         FOO       0.50      1.00      0.67         2
+         GRA       0.50      1.00      0.67         1
+         LEA       0.67      0.67      0.67         3
+         MET       0.50      1.00      0.67         1
+         MIS       0.50      1.00      0.67         1
+         PAI       0.33      0.33      0.33         3
+         SAN       0.33      1.00      0.50         1
+         STO       0.00      0.00      0.00         1
+         TER       1.00      1.00      1.00         2
+         TIL       0.67      1.00      0.80         2
+         WAT       1.00      0.50      0.67         2
+         WHE       0.00      0.00      0.00         1
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.53        34
+   macro avg       0.50      0.60      0.51        34
+weighted avg       0.49      0.53      0.48        34

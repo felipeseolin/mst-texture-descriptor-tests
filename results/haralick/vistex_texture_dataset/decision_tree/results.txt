@@ -1,0 +1,45 @@
+====== HARALICK - DECISION TREE - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 23.53%
+
+Precision Micro: 23.53%
+Precision Macro: 17.59%
+
+Recall Micro: 23.53%
+Recall Macro: 25.93%
+
+F1-Score Micro: 23.53%
+F1-Score Macro: 20.62%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       0.00      0.00      0.00         2
+         BUI       0.33      0.50      0.40         2
+         FAB       0.00      0.00      0.00         4
+         FLO       0.00      0.00      0.00         2
+         FOO       0.00      0.00      0.00         2
+         GRA       0.50      1.00      0.67         1
+         LEA       0.33      0.67      0.44         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.00      0.00      0.00         1
+         STO       0.00      0.00      0.00         1
+         TER       0.67      1.00      0.80         2
+         TIL       0.33      0.50      0.40         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.24        34
+   macro avg       0.18      0.26      0.21        34
+weighted avg       0.15      0.24      0.18        34

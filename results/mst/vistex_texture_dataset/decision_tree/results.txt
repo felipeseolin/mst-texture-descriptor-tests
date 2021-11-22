@@ -1,0 +1,46 @@
+====== MST - DECISION TREE - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 38.24%
+
+Precision Micro: 38.24%
+Precision Macro: 31.93%
+
+Recall Micro: 38.24%
+Recall Macro: 37.72%
+
+F1-Score Micro: 38.24%
+F1-Score Macro: 32.83%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       0.00      0.00      0.00         2
+         BUI       1.00      1.00      1.00         2
+         CLO       0.00      0.00      0.00         0
+         FAB       0.67      0.50      0.57         4
+         FLO       0.00      0.00      0.00         2
+         FOO       0.50      0.50      0.50         2
+         GRA       0.50      1.00      0.67         1
+         LEA       0.40      0.67      0.50         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.50      1.00      0.67         1
+         STO       0.00      0.00      0.00         1
+         TER       1.00      0.50      0.67         2
+         TIL       1.00      1.00      1.00         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       0.50      1.00      0.67         1
+
+    accuracy                           0.38        34
+   macro avg       0.32      0.38      0.33        34
+weighted avg       0.36      0.38      0.36        34

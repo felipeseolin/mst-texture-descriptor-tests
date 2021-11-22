@@ -1,0 +1,45 @@
+====== GABOR - K_NEAREST_NEIGHBORS - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 20.59%
+
+Precision Micro: 20.59%
+Precision Macro: 13.33%
+
+Recall Micro: 20.59%
+Recall Macro: 16.20%
+
+F1-Score Micro: 20.59%
+F1-Score Macro: 14.30%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       0.00      0.00      0.00         2
+         BUI       0.00      0.00      0.00         2
+         FAB       0.20      0.25      0.22         4
+         FLO       0.33      0.50      0.40         2
+         FOO       0.20      0.50      0.29         2
+         GRA       0.00      0.00      0.00         1
+         LEA       0.67      0.67      0.67         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.00      0.00      0.00         1
+         STO       0.00      0.00      0.00         1
+         TER       1.00      1.00      1.00         2
+         TIL       0.00      0.00      0.00         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       0.00      0.00      0.00         1
+
+    accuracy                           0.21        34
+   macro avg       0.13      0.16      0.14        34
+weighted avg       0.17      0.21      0.18        34

@@ -1,0 +1,45 @@
+====== HARALICK - SVC - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 26.47%
+
+Precision Micro: 26.47%
+Precision Macro: 5.97%
+
+Recall Micro: 26.47%
+Recall Macro: 16.67%
+
+F1-Score Micro: 26.47%
+F1-Score Macro: 8.59%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       0.00      0.00      0.00         2
+         BUI       0.00      0.00      0.00         2
+         FAB       0.20      1.00      0.33         4
+         FLO       0.00      0.00      0.00         2
+         FOO       0.00      0.00      0.00         2
+         GRA       0.00      0.00      0.00         1
+         LEA       0.38      1.00      0.55         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.00      0.00      0.00         1
+         STO       0.00      0.00      0.00         1
+         TER       0.50      1.00      0.67         2
+         TIL       0.00      0.00      0.00         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       0.00      0.00      0.00         1
+
+    accuracy                           0.26        34
+   macro avg       0.06      0.17      0.09        34
+weighted avg       0.09      0.26      0.13        34

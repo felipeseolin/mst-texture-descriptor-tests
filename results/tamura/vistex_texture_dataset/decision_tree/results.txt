@@ -1,0 +1,46 @@
+====== TAMURA - DECISION TREE - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 20.59%
+
+Precision Micro: 20.59%
+Precision Macro: 22.81%
+
+Recall Micro: 20.59%
+Recall Macro: 23.68%
+
+F1-Score Micro: 20.59%
+F1-Score Macro: 21.05%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       1.00      0.50      0.67         2
+         BUI       0.00      0.00      0.00         2
+         CLO       0.00      0.00      0.00         0
+         FAB       0.00      0.00      0.00         4
+         FLO       0.00      0.00      0.00         2
+         FOO       1.00      0.50      0.67         2
+         GRA       0.00      0.00      0.00         1
+         LEA       0.00      0.00      0.00         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.33      1.00      0.50         1
+         STO       0.00      0.00      0.00         1
+         TER       1.00      1.00      1.00         2
+         TIL       0.50      0.50      0.50         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       0.50      1.00      0.67         1
+
+    accuracy                           0.21        34
+   macro avg       0.23      0.24      0.21        34
+weighted avg       0.23      0.21      0.20        34

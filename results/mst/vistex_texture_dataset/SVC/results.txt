@@ -1,0 +1,45 @@
+====== MST - SVC - VISTEX TEXTURE DATASET ======
+
+167 images
+
+SEED: 5
+Train size: 133
+Test size: 34
+
+Accuracy: 17.65%
+
+Precision Micro: 17.65%
+Precision Macro: 3.54%
+
+Recall Micro: 17.65%
+Recall Macro: 11.11%
+
+F1-Score Micro: 17.65%
+F1-Score Macro: 5.05%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         3
+         BRI       0.00      0.00      0.00         2
+         BUI       0.50      1.00      0.67         2
+         FAB       0.14      1.00      0.24         4
+         FLO       0.00      0.00      0.00         2
+         FOO       0.00      0.00      0.00         2
+         GRA       0.00      0.00      0.00         1
+         LEA       0.00      0.00      0.00         3
+         MET       0.00      0.00      0.00         1
+         MIS       0.00      0.00      0.00         1
+         PAI       0.00      0.00      0.00         3
+         SAN       0.00      0.00      0.00         1
+         STO       0.00      0.00      0.00         1
+         TER       0.00      0.00      0.00         2
+         TIL       0.00      0.00      0.00         2
+         WAT       0.00      0.00      0.00         2
+         WHE       0.00      0.00      0.00         1
+         WOO       0.00      0.00      0.00         1
+
+    accuracy                           0.18        34
+   macro avg       0.04      0.11      0.05        34
+weighted avg       0.05      0.18      0.07        34
