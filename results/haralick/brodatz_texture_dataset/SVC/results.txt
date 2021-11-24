@@ -1,0 +1,40 @@
+====== HARALICK - SVC - BRODATZ TEXTURE DATASET ======
+
+91 images
+
+SEED: 5
+Train size: 72
+Test size: 19
+
+Accuracy: 36.84%
+
+Precision Micro: 36.84%
+Precision Macro: 35.51%
+
+Recall Micro: 36.84%
+Recall Macro: 53.85%
+
+F1-Score Micro: 36.84%
+F1-Score Macro: 38.61%
+
+Report: 
+
+               precision    recall  f1-score   support
+
+         BAR       0.00      0.00      0.00         2
+         BRI       0.20      1.00      0.33         1
+         BUB       0.25      1.00      0.40         1
+         GRA       0.00      0.00      0.00         2
+         LEA       0.00      0.00      0.00         2
+         PIG       1.00      1.00      1.00         1
+         RAF       0.00      0.00      0.00         2
+         SAN       1.00      1.00      1.00         1
+         STR       0.00      0.00      0.00         2
+         WAT       0.17      1.00      0.29         1
+         WEA       1.00      1.00      1.00         1
+         WOL       0.00      0.00      0.00         2
+         WOO       1.00      1.00      1.00         1
+
+    accuracy                           0.37        19
+   macro avg       0.36      0.54      0.39        19
+weighted avg       0.24      0.37      0.26        19
