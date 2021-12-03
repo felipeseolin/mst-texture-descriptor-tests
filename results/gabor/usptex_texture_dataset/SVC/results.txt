@@ -1,4 +1,4 @@
-====== GABOR - SVC -  ======
+====== GABOR - SVC - USPTEX TEXTURE DATASET ======
 
 2292 images
 

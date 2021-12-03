@@ -1,4 +1,4 @@
-====== HARALICK - LINEAR_SVC -  ======
+====== HARALICK - LINEAR_SVC - USPTEX TEXTURE DATASET ======
 
 2292 images
 

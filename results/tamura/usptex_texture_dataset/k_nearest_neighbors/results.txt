@@ -1,4 +1,4 @@
-====== TAMURA - K_NEAREST_NEIGHBORS -  ======
+====== TAMURA - K_NEAREST_NEIGHBORS - USPTEX TEXTURE DATASET ======
 
 2292 images
 

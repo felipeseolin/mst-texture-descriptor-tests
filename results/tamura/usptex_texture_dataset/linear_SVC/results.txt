@@ -1,4 +1,4 @@
-====== TAMURA - LINEAR_SVC -  ======
+====== TAMURA - LINEAR_SVC - USPTEX TEXTURE DATASET ======
 
 2292 images
 

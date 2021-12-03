@@ -1,4 +1,4 @@
-====== LBP - LINEAR_SVC -  ======
+====== LBP - LINEAR_SVC - USPTEX TEXTURE DATASET ======
 
 2292 images
 

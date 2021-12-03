@@ -1,4 +1,4 @@
-====== MST - K_NEAREST_NEIGHBORS -  ======
+====== MST - K_NEAREST_NEIGHBORS - USPTEX TEXTURE DATASET ======
 
 2292 images
 

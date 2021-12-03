@@ -1,4 +1,4 @@
-====== LBP - K_NEAREST_NEIGHBORS -  ======
+====== LBP - K_NEAREST_NEIGHBORS - USPTEX TEXTURE DATASET ======
 
 2292 images
 
